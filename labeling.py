@@ -32,6 +32,9 @@ label_folder = args.labels
 
 images = [os.path.join(image_folder, e) for e in os.listdir(image_folder)]
 
+print('d: next')
+print('a: previous')
+
 
 def read_image():
     global current_image, file_path
