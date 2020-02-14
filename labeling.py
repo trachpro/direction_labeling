@@ -43,6 +43,7 @@ def read_image():
     current_image = np.zeros((h, w * 2, 3), np.uint8)
     current_image[:, int(w / 2): int(1.5 * w), :] = org_image
     cv2.line(current_image, (0, const_h), (current_image.shape[1], const_h), (0, 255, 0), 4)
+    cv2.line(current_image, (w, 0), (w, h), (0, 255, 0), 4)
     return current_image
 
 
